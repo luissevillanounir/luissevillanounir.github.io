@@ -1,1 +1,41 @@
-<!DOCTYPE html><html lang="es"><head> <meta charset="utf-8"> <title>Este es mi portfolio en GitHub Pages!!!</title> <style media="screen"> body{font-family: sans-serif;}h1{color: rgb(192, 0, 0);}.wrapper{margin: 0 auto; max-width: 768px;}</style></head><body> <div class="wrapper"> <h1>Bienvenidxs a mi Portfolio</h1> <p>Por primera vez estoy trabajando con Git como sistema de control de versiones</p><p>Además, he conseguido poner en marcha mi portfolio utilizando GitHub Pages</p></div></body></html>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style media="screen">
+svg {
+  pointer-events: none;
+}
+svg,
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+path {
+  stroke: black;
+  stroke-width:2;
+  fill:none;
+  pointer-events: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.tooltip {
+  font-family: sans-serif;
+  position: absolute;
+  pointer-events: none;
+  line-height: 1.5rem;
+  color: #333;
+}
+.tooltip span {
+  font-weight: bold;
+  color: #222;
+}
+</style>
+<body>
+  <canvas width="960" height="600"></canvas>
+  <svg width="960" height="600"></svg>
+  <div class="tooltip"></div>
+  <script src="bundle.js"></script>
+</body>
+</html>
